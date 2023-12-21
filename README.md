@@ -1,9 +1,8 @@
 # Title of your paper
 ### Members
-* name, student ID1
-* name, student ID2
-* name, student ID3
-* ...
+* Hoe Zi Onn, 111753229
+* 
+* 
 
 ### Demo 
 You might provide an example command or a few commands to reproduce your analysis, i.e., the following R script

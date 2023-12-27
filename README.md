@@ -2,15 +2,16 @@
 
 > Quentin Szabo et al. ,TADs are 3D structural units of higher-order chromosome organization in Drosophila.Sci. Adv.4,eaar8082(2018).DOI:10.1126/sciadv.aar8082
 
-### Members
+## Members
 
 * Hoe Zi Onn, 111753229
 * 
 * 
 
-### Demo 
+## Demo 
 
 You might provide an example command or a few commands to reproduce your analysis, i.e., the following R script
+
 ```R
 Rscript code/your_script.R --input data/training --output results/performance.tsv
 ```
@@ -33,7 +34,7 @@ idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Proje
 
 ### code
 
-* Which packages do you use? 
+* Which packages do you use?
   * original packages in the paper
   * additional packages you found
 * Analysis steps

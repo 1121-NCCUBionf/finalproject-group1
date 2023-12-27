@@ -5,10 +5,10 @@
 ## Members
 
 * Hoe Zi Onn, 111753229
-* 
+* Han-Cheng Guan, 112753134
 * 
 
-## Demo 
+## Demo
 
 You might provide an example command or a few commands to reproduce your analysis, i.e., the following R script
 

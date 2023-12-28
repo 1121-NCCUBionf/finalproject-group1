@@ -1,7 +1,14 @@
 # mac file
 .DS_Store
 
+# configuration file
+.vscode/
+
 # raw data
 *.gz
 *.fastq
 *.zip
+
+# temp files
+README_template.md
+

@@ -6,14 +6,14 @@
 
 * Hoe Zi Onn, 111753229
 * Han-Cheng Guan, 112753134
-* 
+*
 
 ## Demo
 
-You might provide an example command or a few commands to reproduce your analysis, i.e., the following R script
+To reproduce our result, (ideally) simply run
 
 ```R
-Rscript code/your_script.R --input data/training --output results/performance.tsv
+make run
 ```
 
 ## Folder organization and its related information
@@ -22,29 +22,40 @@ idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Proje
 
 ### docs
 
-* Your presentation, 1121_bioinformatics_FP_groupID.ppt/pptx/pdf (i.e.,1121_bioinformatics_FP_group1.ppt), by **01.04**
+* TODO: Our presentation, 1121_bioinformatics_FP_groupID.pdf, by **01.04**
 * Any related document for the project
-  * i.e., software user guide
+  * TODO: software user guide
 
-### data (do not upload fastq file)
+### data
 
-* Source
-* Format
-* Size
+> downloadable data are not included in this repository
+
+| Data | Source | Format | Size | Description |
+| ---- | ------ | ------ | ---- | ----------- |
+| Raw Data | [NCBI GSE99107](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE99107) | `fastq` | ~ 250 GB (compressed) | 6 samples |
+| Reference Genome | [UCSC dm6](https://hgdownload.soe.ucsc.edu/downloads.html#fruitfly) | `fasta` | 147 MB | - |
+| Genome Index | from `bowtie2` | `bt2` | - | - |
 
 ### code
 
-* Which packages do you use?
+* Packages we use
   * original packages in the paper
-  * additional packages you found
+    * None
+  * additional packages we found
+    * [fanc](https://github.com/vaquerizaslab/fanc)
+    * [bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
 * Analysis steps
+  * TODO
 
 ### results
 
-* Which part of the paper do you reproduce?
-* Any improvement or change in your package?
+* Which part of the paper do we reproduce?
+  * Hi-C data processing
+  * Hi-C contact map visualization
+* Improvement or change in our package?
+  * None
 
 ## References
 
-* Packages you use
+* Packages we use
 * Related publications

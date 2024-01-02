@@ -18,8 +18,6 @@ make run
 
 ## Folder organization and its related information
 
-idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Projects.](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424) PLoS Comput Biol 5(7): e1000424.
-
 ### docs
 
 * TODO: Our presentation, 1121_bioinformatics_FP_groupID.pdf, by **01.04**
@@ -58,4 +56,5 @@ idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Proje
 ## References
 
 * Packages we use
+  * (Please refer to the Github's Project section.)
 * Related publications

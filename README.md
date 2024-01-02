@@ -10,10 +10,13 @@
 
 ## Demo
 
-To reproduce our result, (ideally) simply run
+To use our pre-configured environment for the first time:
 
-```R
-make run
+```bash
+git clone https://github.com/1121-NCCUBionf/finalproject-group1.git
+cd finalproject-group1
+docker build -t fanc-env .
+docker run -it fanc-env
 ```
 
 ## Folder organization and its related information
@@ -31,7 +34,7 @@ make run
 | Data | Source | Format | Size | Description |
 | ---- | ------ | ------ | ---- | ----------- |
 | Raw Data | [NCBI GSE99107](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE99107) | `fastq` | ~ 250 GB (compressed) | 6 samples |
-| Reference Genome | [UCSC dm6](https://hgdownload.soe.ucsc.edu/downloads.html#fruitfly) | `fasta` | 147 MB | - |
+| Reference Genome | [UCSC dm6](https://hgdownload.soe.ucsc.edu/downloads.html#fruitfly) | `fasta` | 147 MB | 2014 |
 | Genome Index | from `bowtie2` | `bt2` | - | - |
 
 ### code
@@ -42,6 +45,9 @@ make run
   * additional packages we found
     * [fanc](https://github.com/vaquerizaslab/fanc)
     * [bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
+    * [fastqsplitter](https://github.com/LUMC/fastqsplitter)
+* scripts
+  * for downloading raw fastq data
 * Analysis steps
   * TODO
 
@@ -56,5 +62,4 @@ make run
 ## References
 
 * Packages we use
-  * (Please refer to the Github's Project section.)
 * Related publications

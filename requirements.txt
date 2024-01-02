@@ -1,0 +1,4 @@
+biopython==1.75
+fanc==0.9.27
+fastqsplitter
+

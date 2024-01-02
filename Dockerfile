@@ -9,7 +9,7 @@ RUN echo "PROMPT_COMMAND=\"echo\"" >> ~/.bashrc
 
 # Update the system and install related packages
 # fanc requires bowtie2
-# vim and tmux are for development purposes
+# vim is for development purpose
 RUN apt-get update && apt-get install -y \
     python3.10 \
     python3-pip \

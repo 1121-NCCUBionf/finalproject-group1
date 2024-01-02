@@ -24,13 +24,14 @@ docker volume create <volume_name>
 - to create & run the docker image:
 
 ```bash
-docker run -v <volume_name>:/data -it <image_name>
+docker run -v <volume_name>:/data --cpuset-cpus="0-3" -it <image_name>
 ```
 
 - to run stopped container:
 
 ```bash
 docker start -it <container-id/name>
+docker start --cpuset-cpus="0-3" -it <container-id/name>
 ```
 
 - to copy local files into docker container:

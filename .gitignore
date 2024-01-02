@@ -8,6 +8,18 @@
 *.gz
 *.fastq
 *.zip
+sample_data/
+TADs_data_zipped/
+
+# reference genome
+dm6.fa
+
+# genome index
+dm6/
+
+# fanc examples
+examples/
+examples.zip
 
 # temp files
 

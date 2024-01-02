@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 ENV TZ="Asia/Taipei"
 
-COPY scripts/ scripts/
+COPY code/scripts/ scripts/
 
 RUN mv scripts/.vimrc root/.vimrc
 RUN echo "PROMPT_COMMAND=\"echo\"" >> ~/.bashrc
@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     bowtie2 \
     make \
-    vim \
+    vim
 
 # Install the 'fanc' Python package
 # note that `fanc` should be installed with `biopython` version 1.75

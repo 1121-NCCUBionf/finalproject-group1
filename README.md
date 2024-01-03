@@ -54,6 +54,10 @@ docker run -v project-data:/project-data -it project-env
     * [sambamba](https://github.com/biod/sambamba)
 * scripts
   * for downloading raw fastq data
+  * for running `fanc` example pipeline
+  * for running `fanc` pipeline with our data
+  * for splitting fastq files into smaller chunks
+  * handy `Makefile` to copy file between host and container
 * Analysis steps
   * TODO
 
@@ -63,9 +67,9 @@ docker run -v project-data:/project-data -it project-env
   * Hi-C data processing
   * Hi-C contact map visualization
 * Improvement or change in our package?
-  * None
+  * we use `dm6` genome instead of `dm3`
 
 ## References
 
-* Packages we use
-* Related publications
+* see packages/tools we use [here](refs/Readme.md).
+

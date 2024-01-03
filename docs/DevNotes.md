@@ -1,5 +1,7 @@
 # DevNotes
 
+- see [requirements](requirements.txt) for python
+
 - to download the fanc example data:
 - can only run `fanc auto` in the `examples` directory
 - MUST download this first!

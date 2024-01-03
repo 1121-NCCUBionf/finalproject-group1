@@ -77,19 +77,28 @@ fruit fly reference genome (latest: dm6)
 - https://hgdownload.soe.ucsc.edu/downloads.html#fruitfly
 
 > dm6.fa.gz - "Soft-masked" assembly sequence in one file.
-    Repeats from RepeatMasker and Tandem Repeats Finder (with period
-    of 12 or less) are shown in lower case; non-repeating sequence is
-    shown in upper case.
+> Repeats from RepeatMasker and Tandem Repeats Finder (with period of 12 or less) are shown in lower case;
+> non-repeating sequence is shown in upper case.
 
 ## Processed Data
 
 ### genome index
 
-you may build genome index with `bowtie2` or `bwa`,
-in our case, we use `bowtie2` to build genome index
+You may build genome index with `bowtie2` or `bwa`.
+
+In our case, we use `bowtie2` to build genome index.
 (this is assumed you have `bowtie2` installed)
 
 ```bash
 bowtie2-build dm6.fa dm6
+```
+
+```bash
+dm6.1.bt2
+dm6.2.bt2
+dm6.3.bt2
+dm6.4.bt2
+dm6.rev.1.bt2
+dm6.rev.2.bt2
 ```
 

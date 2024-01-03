@@ -25,16 +25,16 @@ docker run -v project-data:/project-data -it project-env
 
 ## Folder organization and its related information
 
-### docs
+### docs/
 
-* TODO: Our presentation, 1121_bioinformatics_FP_groupID.pdf, by **01.04**
+* TODO: Our presentation, 1121_bioinformatics_FP_groupID.pdf
 * Any related document for the project
-  * TODO: software user guide
+  * A note for the development
 
-### data
+### data/
 
 > downloadable data are not included in this repository
-> see `data/Readme.md` for more information.
+> see [here](data/Readme.md) for more information.
 
 | Data | Source | Format | Size | Description |
 | ---- | ------ | ------ | ---- | ----------- |
@@ -42,7 +42,7 @@ docker run -v project-data:/project-data -it project-env
 | Reference Genome | [UCSC dm6](https://hgdownload.soe.ucsc.edu/downloads.html#fruitfly) | `fasta` | 147 MB | 2014 |
 | Genome Index | from `bowtie2` | `bt2` | - | - |
 
-### code
+### code/
 
 * Packages we use
   * original packages in the paper
@@ -58,10 +58,8 @@ docker run -v project-data:/project-data -it project-env
   * for running `fanc` pipeline with our data
   * for splitting fastq files into smaller chunks
   * handy `Makefile` to copy file between host and container
-* Analysis steps
-  * TODO
 
-### results
+### results/
 
 * Which part of the paper do we reproduce?
   * Hi-C data processing

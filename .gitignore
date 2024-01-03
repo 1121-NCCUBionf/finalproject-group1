@@ -10,6 +10,10 @@
 *.zip
 sample_data/
 TADs_data_zipped/
+fastq_zipped/
+
+# processed data
+*/output/
 
 # reference genome
 dm6.fa

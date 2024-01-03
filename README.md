@@ -34,6 +34,7 @@ docker run -v project-data:/project-data -it project-env
 ### data
 
 > downloadable data are not included in this repository
+> see `data/Readme.md` for more information.
 
 | Data | Source | Format | Size | Description |
 | ---- | ------ | ------ | ---- | ----------- |
@@ -50,6 +51,7 @@ docker run -v project-data:/project-data -it project-env
     * [fanc](https://github.com/vaquerizaslab/fanc)
     * [bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
     * [fastqsplitter](https://github.com/LUMC/fastqsplitter)
+    * [sambamba](https://github.com/biod/sambamba)
 * scripts
   * for downloading raw fastq data
 * Analysis steps

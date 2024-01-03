@@ -1,0 +1,46 @@
+FROM linuxbrew/brew:latest
+
+ENV TZ="Asia/Taipei"
+
+COPY code/scripts/ scripts/
+
+RUN mv scripts/.vimrc /.vimrc && \
+  echo "PROMPT_COMMAND=\"echo\"" >> ~/.bashrc && \
+  echo "alias pip=pip3.10" >> ~/.bashrc && \
+  echo "alias pip3=pip3.10" >> ~/.bashrc && \
+  echo "alias python=python3.10" >> ~/.bashrc && \
+  echo "alias python3=python3.10" >> ~/.bashrc && \
+  echo "HOMEBREW_NO_AUTO_UPDATE=1" >> ~/.bashrc
+
+# RUN export HOMEBREW_NO_AUTO_UPDATE=1
+
+RUN brew install python@3.10 && \
+  brew install bowtie2 && \
+  brew install vim && \
+  brew install gcc@11
+
+RUN pip3.10 install -q biopython==1.75
+RUN pip3.10 install -q fanc==0.9.27
+RUN pip3.10 install -q fastqsplitter
+
+RUN brew install brewsci/bio/sambamba
+
+# Update the system and install related packages
+# fanc requires bowtie2
+# vim is for development purpose
+# RUN apt-get install -y \
+#   python3.10 \
+#   python3-pip \
+#   bowtie2 \
+#   vim
+
+# RUN brew install python@3.10 && \
+#   brew install bowtie2 && \
+#   brew install vim
+#
+# # Install the 'fanc' Python package
+# # note that `fanc` should be installed with `biopython` version 1.75
+# RUN pip3 install -q biopython==1.75
+# RUN pip3 install -q fanc==0.9.27
+# RUN pip3 install -q fastqsplitter
+

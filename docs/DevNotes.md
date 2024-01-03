@@ -15,6 +15,7 @@ docker build -t <image_name> .
 ```
 
 - to create a docker **volume**:
+- best practice to separate data from container
 - (remember to then copy the data to the volume)
 
 ```bash
@@ -40,3 +41,16 @@ docker start --cpuset-cpus="0-3" -it <container-id/name>
 ```bash
 docker cp examples/ <container-id/name>:/data
 ```
+
+- check available volumes:
+
+```bash
+docker volume ls
+```
+
+- check specific volume:
+
+```bash
+docker inspect <volume_name>
+```
+

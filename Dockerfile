@@ -4,18 +4,18 @@ ENV TZ="Asia/Taipei"
 
 COPY code/scripts/ scripts/
 
-RUN mv scripts/.vimrc root/.vimrc
-RUN echo "PROMPT_COMMAND=\"echo\"" >> ~/.bashrc
+RUN mv scripts/.vimrc root/.vimrc && \
+  echo "PROMPT_COMMAND=\"echo\"" >> ~/.bashrc
 
 # Update the system and install related packages
 # fanc requires bowtie2
 # vim is for development purpose
 RUN apt-get update && apt-get install -y \
-    python3.10 \
-    python3-pip \
-    bowtie2 \
-    make \
-    vim
+  python3.10 \
+  python3-pip \
+  bowtie2 \
+  make \
+  vim
 
 # Install the 'fanc' Python package
 # note that `fanc` should be installed with `biopython` version 1.75

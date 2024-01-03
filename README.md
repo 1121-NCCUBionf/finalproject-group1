@@ -10,14 +10,18 @@
 
 ## Demo
 
-To use our pre-configured environment for the first time:
+To use our pre-configured environment for the first time (assuming you have `git` & `docker` installed):
 
 ```bash
 git clone https://github.com/1121-NCCUBionf/finalproject-group1.git
 cd finalproject-group1
-docker build -t fanc-env .
-docker run -it fanc-env
+docker volume create project-data
+docker build -t project-env .
+docker run -v project-data:/project-data -it project-env
 ```
+
+- store your data in `project-data` docker volume
+- and you can access your data in `/project-data` directory inside the container
 
 ## Folder organization and its related information
 

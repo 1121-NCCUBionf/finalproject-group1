@@ -27,7 +27,7 @@ docker run -v project-data:/project-data -it project-env
 
 ### docs/
 
-* TODO: Our presentation, 1121_bioinformatics_FP_groupID.pdf
+* Our presentation, 1121_bioinformatics_FP_group1.pdf
 * Any related document for the project
   * A note for the development
 
@@ -51,7 +51,7 @@ docker run -v project-data:/project-data -it project-env
     * [fanc](https://github.com/vaquerizaslab/fanc)
     * [bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
     * [fastqsplitter](https://github.com/LUMC/fastqsplitter)
-    * [sambamba](https://github.com/biod/sambamba)
+    * ([sambamba](https://github.com/biod/sambamba))
 * scripts
   * for downloading raw fastq data
   * for running `fanc` example pipeline
@@ -69,5 +69,5 @@ docker run -v project-data:/project-data -it project-env
 
 ## References
 
-* see packages/tools we use [here](refs/Readme.md).
+* see packages/tools we use [here](refs/Citations.md).
 
